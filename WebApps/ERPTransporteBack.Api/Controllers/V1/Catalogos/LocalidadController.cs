@@ -6,6 +6,10 @@ namespace ERPTransporteBack.Api.Controllers.Catalogos
     [ApiController]
     public class LocalidadController : ControllerBase
     {
-
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            return Ok();
+        }
     }
 }
