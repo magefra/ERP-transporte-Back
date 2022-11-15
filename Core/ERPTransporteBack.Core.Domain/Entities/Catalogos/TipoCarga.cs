@@ -2,8 +2,8 @@
 {
     public class TipoCarga : BaseEntity<Guid>
     {
-        public string Codigo { get; set; }
-        public string Status { get; set; }
+        public int Codigo { get; set; }
+        public string Estatus { get; set; }
         public string Descripcion { get; set; }
         public string Referencia { get; set; }
         public string ClaveSAT { get; set; }

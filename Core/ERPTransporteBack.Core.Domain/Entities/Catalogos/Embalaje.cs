@@ -2,7 +2,7 @@
 {
     public class Embalaje : BaseEntity<Guid>
     {
-        public string Codigo { get; set; }
+        public int Codigo { get; set; }
         public string Descripcion { get; set; }
         public string Leyenda { get; set; }
         public string ClaveUnidadMedidaSAT { get; set; }

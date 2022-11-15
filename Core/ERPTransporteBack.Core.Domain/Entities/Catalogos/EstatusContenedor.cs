@@ -2,7 +2,7 @@
 {
     public class EstatusContenedor : BaseEntity<Guid>
     {
-        public string Codigo { get; set; }
+        public int Codigo { get; set; }
         public string Descripcion { get; set; }
     }
 }

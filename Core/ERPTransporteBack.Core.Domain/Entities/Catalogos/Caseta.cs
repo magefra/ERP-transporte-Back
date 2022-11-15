@@ -2,12 +2,13 @@
 {
     public class Caseta : BaseEntity<Guid>
     {
-        public string Codigo { get; set; }
+        public int Codigo { get; set; }
+        public bool Activo { get; set; }
         public string Descripcion { get; set; }
         public bool Convenio { get; set; }
         public string Tramo { get; set; }
         public double TasaIVA { get; set; }
-        public string Proveedor { get; set; }
+        public int Proveedor { get; set; }
         public string NombreProveedor { get; set; }
         public int IdCotizador { get; set; }
         public double De1A3 { get; set; }

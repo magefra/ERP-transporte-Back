@@ -47,13 +47,10 @@
         public string StatusAntena { get; set; }
         public string TarjetaCombustible { get; set; }
         public string Longitud { get; set; }
-
         public string ValorAdquisicion { get; set; }
         public string Factura { get; set; }
         public DateTime FechaCompra { get; set; }
-
         public DateTime FechaBaja { get; set; }
-
         public string ClaveBancaCivil { get; set; }
         public string NumeroPolizaSeguro { get; set; }
         public string Aseguradora { get; set; }
