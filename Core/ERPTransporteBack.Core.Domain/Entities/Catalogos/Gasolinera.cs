@@ -1,6 +1,6 @@
 ﻿namespace ERPTransporteBack.Core.Domain.Entities.Catalogos
 {
-    public class Gasolinera
+    public class Gasolinera : BaseEntity<Guid>
     {
         public string Codigo { get; set; }
         public string Descripcion { get; set; }

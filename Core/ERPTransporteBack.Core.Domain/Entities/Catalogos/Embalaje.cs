@@ -1,6 +1,6 @@
 ﻿namespace ERPTransporteBack.Core.Domain.Entities.Catalogos
 {
-    public class Embalaje
+    public class Embalaje : BaseEntity<Guid>
     {
         public string Codigo { get; set; }
         public string Descripcion { get; set; }

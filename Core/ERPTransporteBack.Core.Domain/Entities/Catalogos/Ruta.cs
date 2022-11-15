@@ -1,6 +1,6 @@
 ﻿namespace ERPTransporteBack.Core.Domain.Entities.Catalogos
 {
-    public class Ruta
+    public class Ruta : BaseEntity<Guid>
     {
         public string Codigo { get; set; }
         public string Grupo { get; set; }

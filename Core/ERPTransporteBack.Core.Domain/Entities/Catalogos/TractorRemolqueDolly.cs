@@ -1,6 +1,6 @@
 ﻿namespace ERPTransporteBack.Core.Domain.Entities.Catalogos
 {
-    public class TractorRemolqueDolly
+    public class TractorRemolqueDolly : BaseEntity<Guid>
     {
         public string NumeroEconomico { get; set; }
         public string SEG { get; set; }
