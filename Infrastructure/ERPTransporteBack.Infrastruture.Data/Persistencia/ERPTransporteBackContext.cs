@@ -20,6 +20,23 @@ namespace ERPTransporteBack.Infrastruture.Data.Persistencia
         public virtual DbSet<Embalaje> Embalajes { get; set; }
         public virtual DbSet<DocumentoEntrega> DocumentosEntrega { get; set; }
 
-
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            foreach (var entry in ChangeTracker.Entries<Core.Domain.Entities.BaseEntity>())
+            {
+                switch (entry.State)
+                {
+                    case EntityState.Added:
+                        entry.Entity.CreatedDate = DateTime.Now;
+                        entry.Entity.CreatedBy = "Magdiel";
+                        break;
+                    case EntityState.Modified:
+                        entry.Entity.LastModifiedDate = DateTime.Now;
+                        entry.Entity.LastModifiedBy = "Magdiel";
+                        break;
+                }
+            }
+            return base.SaveChangesAsync(cancellationToken);
+        }
     }
 }

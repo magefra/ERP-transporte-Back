@@ -1,12 +1,11 @@
 ﻿namespace ERPTransporteBack.Core.Domain.Entities
 {
-    public abstract class BaseEntity<TKey>
+    public class BaseEntity
     {
-        public TKey Id { get; set; }
         public string CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
-        public string LastModifiedDate { get; set; }
-        public DateTime LastModifieDate { get; set; }
+        public string LastModifiedBy { get; set; }
+        public DateTime LastModifiedDate { get; set; }
 
     }
 }

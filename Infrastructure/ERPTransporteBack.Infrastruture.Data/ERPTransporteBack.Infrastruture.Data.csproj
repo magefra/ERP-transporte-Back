@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core\ERPTransporteBack.Core.Application\ERPTransporteBack.Core.Application.csproj" />
     <ProjectReference Include="..\..\Core\ERPTransporteBack.Core.Domain\ERPTransporteBack.Core.Domain.csproj" />
   </ItemGroup>
 
