@@ -1,7 +1,8 @@
 ﻿namespace ERPTransporteBack.Core.Domain.Entities.Catalogos
 {
-    public class Caseta : BaseEntity<Guid>
+    public class Caseta : BaseEntity
     {
+        public Guid Id { get; set; }
         public int Codigo { get; set; }
         public bool Activo { get; set; }
         public string Descripcion { get; set; }

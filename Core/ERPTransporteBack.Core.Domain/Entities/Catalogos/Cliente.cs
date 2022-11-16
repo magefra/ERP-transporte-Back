@@ -1,7 +1,8 @@
 ﻿namespace ERPTransporteBack.Core.Domain.Entities.Catalogos
 {
-    public class Cliente : BaseEntity<Guid>
+    public class Cliente : BaseEntity
     {
+        public Guid Id { get; set; }
         public string Clave { get; set; }
         public string RFC { get; set; }
         public string CURP { get; set; }
